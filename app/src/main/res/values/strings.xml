@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Power House Gym</string>
+    <string name="see_your_plans">Your Plan</string>
+    <string name="see_all_activities">All Exercices</string>
+    <string name="about_us">Infos</string>
+    <string name="training_name">Training Name</string>
+    <string name="short_description">Short Description</string>
+    <string name="add_to_plan">Add To Plan</string>
+    <string name="longDesc">Long Description</string>
+
+    <array name="days_of_the_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </array>
+
+    <string name="minutes">minutes</string>
+    <string name="how_much_time">How much time do you have in mind?</string>
+    <string name="add">Add</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="select_day_of_week">Select the Day</string>
+</resources>
