@@ -17,31 +17,62 @@ public class Utils {
     }
 
     private void initData() {
+        Training Chest = new Training(
+                1,
+                "Chest",
+                "Exercises focused on developing the chest muscles, particularly the pectorals.",
+                "Chest exercises target the pectorals (major and minor), the muscles responsible for pushing movements. These exercises are essential for building upper body strength and increasing muscle mass in the chest region. Key exercises include the bench press, push-ups, and chest fly, which can be performed with dumbbells, barbells, or body weight to vary the intensity.",
+                R.drawable.chest);
+        training.add(Chest);
 
-        Training pushUp = new Training(1, "Push up", "An exercise in which a person lies facing the floor and, keeping their back straight, raises their body by pressing down on their hands.",
-                "The definition of a push-up is an exercise done laying with face, palms and toes facing down, keeping legs and back straight, extending arms straight to push body up and back down again. An example of a push-up is a great exercise that works the chest, shoulder and arm muscles.",
-                "https://www.istreetwatch.co.uk/wp-content/uploads/2019/01/push-ups.jpg");
-        training.add(pushUp);
+        Training Back = new Training(
+                2,
+                "Back",
+                "Exercises that target the back muscles to enhance posture, strength, and overall back development.",
+                "Back exercises strengthen the latissimus dorsi, trapezius, rhomboids, and other muscles of the back. These movements improve posture, contribute to overall body strength, and are crucial for functional fitness. Key exercises include pull-ups, lat pulldowns, rows, and deadlifts, which work the upper and lower back and help in developing a strong and balanced posterior chain.",
+                R.drawable.bback);
+        training.add(Back);
 
-        Training squat = new Training(2, "Squat", "If you crouch down very low and sit on your heels, you squat",
-                "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up. During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes; conversely the hip and knee joints extend and the ankle joint plantarflexes when standing up.",
-                "https://lmimirror3pvr.azureedge.net/static/media/16949/921e38e6-9020-4dd9-a619-7726cadc7284/fit-planet-60-hero-image-960x540.jpg");
-        training.add(squat);
+        Training Shoulders = new Training(
+                3,
+                "Shoulders",
+                "Shoulder exercises help develop the deltoids and improve shoulder stability and mobility.",
+                "Shoulder exercises primarily target the deltoids, consisting of three parts: front, middle, and rear deltoids. Strong shoulders are essential for a wide range of upper body movements and can help prevent injuries. Common exercises include the shoulder press, lateral raises, and front raises, which engage the deltoid muscles and improve strength and range of motion for overhead movements.",
+                R.drawable.shoulders);
+        training.add(Shoulders);
 
-        Training legPress = new Training(3, "Leg Press", "The leg press is a weight training exercise in which the individual pushes a weight or resistance away from them using their legs.",
-                "The leg press is a weight training exercise in which the individual pushes a weight or resistance away from them using their legs. The term leg press also refers to the apparatus used to perform this exercise. The leg press can be used to evaluate an athlete's overall lower body strength (from knee joint to hip).",
-                "https://fitnessvolt.com/wp-content/uploads/2022/05/Leg-Press-Foot-Placements.jpg");
-        training.add(legPress);
+        Training Arms = new Training(
+                4,
+                "Arms",
+                "Focuses on building the biceps and triceps, contributing to arm strength and definition.",
+                " Arm exercises focus on the muscles of the upper arms, primarily the biceps and triceps. These exercises improve both strength and aesthetics, with exercises such as bicep curls, tricep dips, and hammer curls. Developing arm strength is essential for improving overall upper body performance and increasing muscle mass in the arms.",
+                R.drawable.arms);
+        training.add(Arms);
 
-        Training pectorals = new Training(4, "Pectorals", "Amazing for building chest muscles",
-                "Your pectoral muscles are one of the largest muscle groups in your upper body. They pull on the humerus (upper arm bone), allowing you to make vertical, horizontal, and rotational movements with your arms. You use these muscles all day, every day, so it's important to keep them strong.",
-                "https://www.bodybuilding.com/images/2016/july/build-your-best-chest-5-must-do-pec-exercises-header-v2-960x540.jpg");
-        training.add(pectorals);
+        Training Legs = new Training(
+                5,
+                "Legs",
+                "Exercises aimed at strengthening the lower body muscles, including the quadriceps, hamstrings, and glutes.",
+                "Leg exercises are essential for building strength, power, and endurance in the lower body. These exercises target the quadriceps, hamstrings, glutes, and calves. Squats, lunges, and leg presses are key exercises that enhance leg strength, stability, and mobility. Strong legs are essential for overall athletic performance and functional movements such as walking, running, and jumping.",
+                R.drawable.leg);
+        training.add(Legs);
 
-        Training pullUps = new Training(5, "Pull-ups", "An exercise involving raising oneself with one's arms by pulling up against a horizontal bar fixed above one's head.",
-                "A pull-up is an upper-body strength exercise. The pull-up is a closed-chain movement where the body is suspended by the hands and pulls up. As this happens, the elbows flex and the shoulders adduct and extend to bring the elbows to the torso.",
-                "https://www.fititnow.com/wp-content/uploads/2020/02/3-Simple-Tips-To-Improve-Your-Pull-Ups.jpg");
-        training.add(pullUps);
+        Training core = new Training(
+                6,
+                "Core",
+                "Exercises that strengthen the muscles of the abdominal region, improving posture and stability.",
+                "Core exercises focus on the muscles of the abdomen, lower back, and obliques. These exercises are important for improving posture, balance, and overall stability. Core strength is essential for almost every movement pattern in fitness, as well as preventing injuries. Planks, crunches, and Russian twists are key exercises that help in toning and strengthening the core muscles.",
+                R.drawable.core);
+        training.add(core);
+
+        Training cardio = new Training(
+                7,
+                "Cardio",
+                "Exercises that elevate the heart rate and improve cardiovascular fitness, often engaging the whole body.",
+                "Cardio exercises are designed to improve the efficiency of the heart and lungs, as well as burn fat. These exercises increase heart rate, stamina, and endurance. Full-body cardio exercises such as jump rope, burpees, and mountain climbers engage multiple muscle groups and improve cardiovascular health. Cardio is also essential for fat loss, weight management, and overall fitness.",
+                R.drawable.cardio);
+        training.add(cardio);
+
     }
 
     public synchronized static Utils getInstance(){

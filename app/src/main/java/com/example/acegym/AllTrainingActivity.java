@@ -23,7 +23,7 @@ public class AllTrainingActivity extends AppCompatActivity {
             adapter.setTraining(Utils.getInstance().getTraining());
         }
 
-        trainingRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        trainingRecyclerView.setLayoutManager(new GridLayoutManager(this,1));
 
     }
 }

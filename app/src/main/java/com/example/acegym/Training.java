@@ -5,9 +5,10 @@ import android.os.Parcelable;
 
 public class Training implements Parcelable {
     private int id;
-    private String name, shortDescription, longDescription, imgUrl;
+    private String name, shortDescription, longDescription;
+    private int imgUrl;
 
-    public Training(int id, String name, String shortDescription, String longDescription, String imgUrl) {
+    public Training(int id, String name, String shortDescription, String longDescription, int imgUrl) {
         this.id = id;
         this.name = name;
         this.shortDescription = shortDescription;
@@ -20,7 +21,7 @@ public class Training implements Parcelable {
         name = in.readString();
         shortDescription = in.readString();
         longDescription = in.readString();
-        imgUrl = in.readString();
+        imgUrl = in.readInt();
     }
 
     public static final Creator<Training> CREATOR = new Creator<Training>() {
@@ -67,11 +68,11 @@ public class Training implements Parcelable {
         this.longDescription = longDescription;
     }
 
-    public String getImgUrl() {
+    public int getImgUrl() {
         return imgUrl;
     }
 
-    public void setImgUrl(String imgUrl) {
+    public void setImgUrl(int imgUrl) {
         this.imgUrl = imgUrl;
     }
 
@@ -97,6 +98,6 @@ public class Training implements Parcelable {
         dest.writeString(name);
         dest.writeString(shortDescription);
         dest.writeString(longDescription);
-        dest.writeString(imgUrl);
+        dest.writeInt(imgUrl);
     }
 }

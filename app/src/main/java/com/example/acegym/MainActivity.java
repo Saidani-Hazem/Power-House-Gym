@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity Started";
-    private Button btnSeeYourPlans, btnSeeAllTrainings, btnAboutUs;
+    private Button btnSeeYourPlans, btnSeeAllTrainings, btnAboutUs, chron;
     private ImageView img;
 
     @Override
@@ -40,6 +40,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnSeeYourPlans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PlanActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        chron.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, chrono.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
     }
 
@@ -48,5 +67,6 @@ public class MainActivity extends AppCompatActivity {
         btnSeeYourPlans = findViewById(R.id.btnSeeYourPlan);
         btnSeeAllTrainings = findViewById(R.id.btnSeeAllActivities);
         btnAboutUs = findViewById(R.id.btnAbout);
+        chron = findViewById(R.id.chrno);
     }
 }
